@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 RUN python3 -m pip install --upgrade pip setuptools wheel
 # Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r ./requirements.txt
+RUN pip install --no-cache-dir -r app/requirements.txt
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
