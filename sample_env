@@ -1,0 +1,5 @@
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=my_secret_password
+DB_HOST=postgres-db
+DB_PORT=5432
+POSTGRES_DB=cake-db

@@ -1,7 +1,7 @@
 version: "3"
 services:
   cake-transformer:
-    image: cake-transformer:latest
+    build: app/
     environment:
       DB_USER: ${POSTGRES_USER}
       DB_PASSWORD: ${POSTGRES_PASSWORD}
