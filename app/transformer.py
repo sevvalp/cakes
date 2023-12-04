@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from sqlalchemy import create_engine
 
-# Load your dataset (replace 'your_dataset.csv' with your actual file)
+# Load your dataset
 df = pd.read_csv('/app/cake_list.csv')
 
 # Fetching values from environment variables
@@ -37,7 +37,6 @@ df['diameter_mm'] = df.apply(standardize_units, axis=1)
 # Drop the original 'diameter' and 'unit' columns if needed
 df = df.drop(['diameter', 'unit'], axis=1)
 
-# Print or further process the dataframe with standardized units
 print(df)
 
 engine = create_engine(
